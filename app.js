@@ -1,3 +1,7 @@
+window.onload = function () {
+  $("#page").show();
+  $("#loading").hide();
+};
 $("#middle_div").on('click', 'a', function(event){
     event.preventDefault();
     $('html, body').animate({

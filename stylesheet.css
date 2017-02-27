@@ -246,3 +246,79 @@ form textarea {
     border: none;
     transition: all 0.2s ease-in 0s;
 }
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.9;
+  background-color: #000000;
+ z-index: 99;
+}
+
+#page{
+  display: none; 
+}
+
+
+#spinningTextG{
+	width:520px;
+	margin:auto;
+	height:105px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinningTextG{
+	color:rgb(0,0,0);
+	font-family:Arial;
+	font-size:90px;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+	animation-name:bounce_spinningTextG;
+	animation-duration:1.5s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	transform:scale(.3);
+}
+
+#spinningTextG_1{
+	animation-delay:0.75s;
+}
+#spinningTextG_2{
+	animation-delay:0.9s;
+}
+#spinningTextG_3{
+	animation-delay:1.05s;
+}
+#spinningTextG_4{
+	animation-delay:1.2s;
+}
+#spinningTextG_5{
+	animation-delay:1.35s;
+}
+#spinningTextG_6{
+	animation-delay:1.5s;
+}
+#spinningTextG_7{
+	animation-delay:1.64s;
+}
+
+@keyframes bounce_spinningTextG{
+	0%{
+		transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		transform:scale(.3) rotate(90deg);
+		color:rgb(255,255,255);
+	}
+}
