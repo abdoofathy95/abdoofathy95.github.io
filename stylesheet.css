@@ -1,0 +1,248 @@
+nav{
+  background-color: white;
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  min-height: 400px;
+}
+.logo{
+  width: 100%;
+  height: 80px;
+  padding: 8px 0;
+  background-image: url("images/logo.png");
+  background-size: cover;
+  background-position: top;
+}
+nav a{
+  position: relative;
+  color: #b1b1b1;
+  display: block;
+  height: 45px;
+}
+
+nav a:hover{
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active{
+  color: black;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.projects-items{
+  position: relative;
+  display: block;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.projects-items li{
+  position: relative;
+  width: 25%;
+  height: 250px;
+  margin-right: 30px;
+  margin-top: 30px;
+  float: left;
+  left: -200px;
+  opacity: 0;
+}
+
+.item--image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.item--details{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top:0;
+  left:0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  opacity: 0;
+  transition: all 0.15s ease-out 0s;
+}
+
+.item:hover .item--details{
+  opacity: 1;
+  transition: all 0.15s ease-in 0s;
+}
+
+.details--title{
+  position: relative;
+  top: 10%;
+  color: #F06868;
+  font-size: 18px;
+  font-family: serif;
+}
+
+.details--p{
+  position: relative;
+  top: 10%;
+  color: white;
+  font-size: 16px;
+  font-family: serif;
+}
+
+.falldown {
+  left: 0 !important;
+  opacity: 1 !important;
+  transition: all 1s;
+}
+
+.clear{
+  clear: both;
+}
+
+#middle_div{
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 10%;
+  width: 100%;
+}
+#middle_div a i{
+  position: relative;
+  top: 20%;
+  opacity: 1;
+}
+
+#middle_div .menu-item{
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  top: 25%;
+  left: 25%;
+}
+
+#middle_div a:hover .menu-item{
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+#middle_div a:hover i{
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+#socialmedia{
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  top: 25%;
+}
+
+#socialmedia a i{
+  position: relative;
+  top: 25%;
+}
+.container{
+  top: 10%;
+  left: 15%;
+  position: absolute;
+}
+.profilePic{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 50px;
+}
+
+.text-zone{
+  position: relative;
+  color: grey;
+  top: 10%;
+  width: 50%;
+  font-size: 18px;
+}
+
+.projects-zone{
+  position: relative;
+  color: grey;
+  top: 10%;
+  width: 80%;
+  font-size: 18px;
+}
+
+#home {
+  min-height: 100vh;
+  margin-bottom: 5%;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+}
+#about{
+  min-height: 100vh;
+  margin-bottom: 5%;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+}
+
+#projects{
+  min-height: 100vh;
+  margin-bottom: 5%;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+}
+
+#skills{
+  min-height: 100vh;
+  margin-bottom: 5%;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+}
+
+#contact{
+ min-height: 100vh;
+ position: relative;
+ left: -100%;
+ opacity: 0;
+}
+form input {
+    background-color: #F4F7F7;
+    color: #0e393b;
+    height: 51.2px;
+    width: 50%;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in 0s;
+}
+
+form textarea {
+    background-color: #F4F7F7;
+    color: #0e393b;
+    height: 102.4px;
+    width: 50%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in 0s;
+}
