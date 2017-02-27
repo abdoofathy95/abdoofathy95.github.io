@@ -188,14 +188,12 @@ body{
 }
 
 #home {
-  min-height: 100vh;
   margin-bottom: 5%;
   position: relative;
   left: -100%;
   opacity: 0;
 }
 #about{
-  min-height: 100vh;
   margin-bottom: 5%;
   position: relative;
   left: -100%;
@@ -203,7 +201,6 @@ body{
 }
 
 #projects{
-  min-height: 100vh;
   margin-bottom: 5%;
   position: relative;
   left: -100%;
@@ -211,7 +208,6 @@ body{
 }
 
 #skills{
-  min-height: 100vh;
   margin-bottom: 5%;
   position: relative;
   left: -100%;
@@ -260,7 +256,7 @@ form textarea {
 }
 
 #page{
-  display: none; 
+  display: none;
 }
 
 
